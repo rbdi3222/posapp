@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_wrap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_mainlayout"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalview01"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/menue_layout01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/menue_add_text01"
+                    style="@style/dialogTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dialog_btn_menue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menue_layout02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/menue_add_text02"
+                    style="@style/dialogTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dialog_btn_menue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menue_layout03"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/menue_add_text03"
+                    style="@style/dialogTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dialog_btn_menue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menue_layout04"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/menue_add_text04"
+                    style="@style/dialogTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dialog_btn_menue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menue_layout05"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/menue_add_text05"
+                    style="@style/dialogTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dialog_btn_menue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menue_layout06"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/menue_add_text06"
+                    style="@style/dialogTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dialog_btn_menue" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/add_menue_btn"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/dialog_btn_menue"
+                android:padding="10dp"
+                android:src="@drawable/add_btn" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!--  <View
+          android:layout_alignBottom="@id/horizontalview01"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#c0c0c0"/>-->
+
+    <LinearLayout
+        android:background="#e6e6e6"
+        android:id="@+id/plus_mark_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="140dp"
+        android:layout_marginTop="79dp">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0" />
+
+        <ListView
+            android:id="@+id/menue_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/dialog_main_list"
+            android:padding="1dp"></ListView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/preview_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+            </ScrollView
+                >
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/close_dialog_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dialog_btn_close"
+                    android:padding="20dp"
+                    android:src="@drawable/multiply" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#c0c0c0" />
+
+            <LinearLayout
+                android:background="#ffffff"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sum_price"
+                    style="@style/dialogTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:textSize="25dp" />
+
+                <TextView
+                    style="@style/dialogTextTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="원" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#c0c0c0" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/save_dialog_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dialog_btn_save"
+                    android:padding="23dp"
+                    android:src="@drawable/save" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
