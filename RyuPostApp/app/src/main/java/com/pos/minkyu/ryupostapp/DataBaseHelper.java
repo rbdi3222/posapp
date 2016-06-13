@@ -20,7 +20,6 @@ public class DataBaseHelper {
     public static final String KEY_FOODCOUNT = "foodcount";
 
     private static final String TAG = "DataBaseHelper";
-//sdfadsfasdf
     private DatabaseHelper mDbHelper;
     private SQLiteDatabase mDb;
 
